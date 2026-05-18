@@ -8,20 +8,16 @@ export default class IntelligentTopBarPreferences extends ExtensionPreferences {
         const settings = this.getSettings();
 
         const page = new Adw.PreferencesPage({
-            title: 'Intelligent Top Bar',
+            title: 'Topbar Hide',
             icon_name: 'preferences-system-symbolic',
         });
 
         const behavior = new Adw.PreferencesGroup({title: 'Behavior'});
         behavior.add(this._createSwitchRow(settings,
-            'intelligent-hide-enabled',
-            'Enable Intelligent Hide',
-            'Auto-hide top bar based on focus and pointer position.'));
-        behavior.add(this._createSwitchRow(settings,
             'hide-when-maximized-only',
-            'Hide On Maximized Window',
-            'Hide the top bar when the focused app window is maximized.'));
-        behavior.add(this._createSpinRow(settings,
+            'Hide on Maximized Window',
+            'Hide the top bar only when the focused window is maximized.'));
+         behavior.add(this._createSpinRow(settings,
             'reveal-edge-threshold-px',
             'Reveal Edge Threshold (px)',
             1, 40, 1));

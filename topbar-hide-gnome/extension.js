@@ -82,7 +82,7 @@ export default class IntelligentTopBarExtension extends Extension {
     }
 
     _shouldHide() {
-        if (!this._settings.get_boolean('intelligent-hide-enabled'))
+        if (!this._settings.get_boolean('hide-when-maximized-only'))
             return false;
 
         if (Main.overview.visible)

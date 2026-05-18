@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
   <schema id="org.gnome.shell.extensions.topbar-hide" path="/org/gnome/shell/extensions/topbar-hide/">
-    <key name="intelligent-hide-enabled" type="b">
-      <default>true</default>
-      <summary>Enable intelligent top bar hiding</summary>
-      <description>Automatically hide the top bar based on focused window and pointer position.</description>
-    </key>
     <key name="hide-when-maximized-only" type="b">
       <default>true</default>
       <summary>Hide only when focused window is maximized</summary>
