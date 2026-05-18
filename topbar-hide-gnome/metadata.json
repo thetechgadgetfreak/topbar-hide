@@ -1,0 +1,15 @@
+{
+  "uuid": "topbar-hide@thetechgadgetfreak",
+  "name": "Intelligent Top Bar",
+  "description": "Auto-hides the GNOME top bar only when the focused window is maximized, with adjustable opacity.",
+  "shell-version": [
+    "50",
+    "50.1"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.topbar-hide",
+  "url": "https://github.com/thetechgadgetfreak",
+  "version": 7,
+  "creator": "TheTechGadgetFreak",
+  "original-author": "TheTechGadgetFreak",
+  "credits": "TheTechGadgetFreak"
+}

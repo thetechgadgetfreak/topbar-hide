@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.topbar-hide" path="/org/gnome/shell/extensions/topbar-hide/">
+    <key name="intelligent-hide-enabled" type="b">
+      <default>true</default>
+      <summary>Enable intelligent top bar hiding</summary>
+      <description>Automatically hide the top bar based on focused window and pointer position.</description>
+    </key>
+    <key name="hide-when-maximized-only" type="b">
+      <default>true</default>
+      <summary>Hide only when focused window is maximized</summary>
+      <description>If true, the top bar only hides when the focused window is maximized.</description>
+    </key>
+    <key name="reveal-edge-threshold-px" type="i">
+      <range min="1" max="40"/>
+      <default>2</default>
+      <summary>Pointer edge threshold in pixels</summary>
+      <description>When pointer Y is within this threshold from top edge, top bar is shown.</description>
+    </key>
+    <key name="visible-opacity" type="i">
+      <range min="0" max="255"/>
+      <default>255</default>
+      <summary>Visible top bar opacity</summary>
+      <description>Opacity used when top bar is visible.</description>
+    </key>
+    <key name="hidden-opacity" type="i">
+      <range min="0" max="255"/>
+      <default>24</default>
+      <summary>Hidden top bar opacity</summary>
+      <description>Opacity used when top bar is hidden.</description>
+    </key>
+    <key name="animation-duration-ms" type="i">
+      <range min="0" max="1000"/>
+      <default>180</default>
+      <summary>Animation duration in milliseconds</summary>
+      <description>Duration of hide/show animation.</description>
+    </key>
+    <key name="pointer-poll-interval-ms" type="i">
+      <range min="50" max="1000"/>
+      <default>140</default>
+      <summary>Pointer poll interval in milliseconds</summary>
+      <description>How frequently the extension checks pointer position for reveal behavior.</description>
+    </key>
+  </schema>
+</schemalist>
