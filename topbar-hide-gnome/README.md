@@ -44,6 +44,19 @@ Output:
 
 - `dist/topbar-hide-gnome_5.x-v1.0.shell-extension.zip`
 
+
+## Install From GitHub Release
+
+1. Open the latest release page:
+   - https://github.com/thetechgadgetfreak/topbar-hide/releases/latest
+2. Download the `.shell-extension.zip` asset.
+3. Open Extension Manager.
+4. Use “Install from file” and select the downloaded ZIP.
+5. Enable the extension:
+   - `topbar-hide@thetechgadgetfreak`
+
+If the extension does not appear immediately, log out and log back in once.
+
 ## Notes
 
 This extension intentionally supports maximize-only hide behavior.
